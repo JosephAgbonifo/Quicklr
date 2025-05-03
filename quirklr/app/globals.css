@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --primarytext: #1a1a1a;
+  --secondary: hsl(0, 0%, 29%);
+  --border: #e5e5e5;
+  --blue: #0b132b;
+  --primary: #b01e28;
+  --accent: #ff6b57;
+  --highlight: #ff9f1c;
+  --contrast: #3b0a0f;
+  --surface: #f5f5f5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primarytext: var(--primarytext);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-blue: var(--blue);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-highlight: var(--highlight);
+  --color-contrast: var(--contrast);
+  --color-surface: var(--surface);
+  --font-poppins: var(--font-poppins);
+  --font-manrope: var(--font-manrope);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* Hide scrollbar for all browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
